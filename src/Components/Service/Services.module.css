@@ -1,0 +1,136 @@
+.servicesSection {
+  background-color: #f8f9fa;
+}
+
+.sectionTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+  text-align: left;
+  padding-left: 20%;
+}
+
+.sectionDescription {
+  font-size: 18px;
+  color: #6c757d;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.service-item {
+  background: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 50px;
+  color: #007bff;
+  margin-right: 20px;
+  padding-left: 20%;
+}
+
+.serviceTitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 15px;
+  padding-left: 20%;
+}
+
+.serviceTitle a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.serviceTitle a:hover {
+  color: #007bff;
+}
+
+.serviceDescription {
+  font-size: 16px;
+  color: #6c757d;
+  padding-left: 20%;
+}
+
+/* Media Query for Small Devices */
+@media (max-width: 768px) {
+  .servicesSection {
+    padding: 20px; /* Add padding for smaller screens */
+  }
+
+  .sectionTitle {
+    font-size: 28px; /* Reduce font size for smaller devices */
+    margin-bottom: 20px; /* Adjust spacing */
+  }
+
+  .sectionDescription {
+    font-size: 16px; /* Adjust font size for readability */
+    margin-bottom: 30px; /* Adjust spacing */
+    padding: 0 10px; /* Add horizontal padding */
+  }
+
+  .service-item {
+    padding: 20px; /* Adjust padding */
+    margin-bottom: 20px; /* Add spacing between items */
+  }
+
+  .icon {
+    font-size: 40px; /* Reduce icon size */
+    margin-right: 10px; /* Adjust spacing */
+    padding-left: 10%; /* Reduce left padding */
+  }
+
+  .serviceTitle {
+    font-size: 18px; /* Adjust font size */
+    margin-bottom: 10px; /* Reduce margin */
+    padding-left: 10%; /* Reduce left padding */
+  }
+
+  .serviceDescription {
+    font-size: 14px; /* Adjust font size */
+    padding-left: 10%; /* Reduce left padding */
+  }
+}
+
+/* Media Query for Extra Small Devices */
+@media (max-width: 576px) {
+  .sectionTitle {
+    font-size: 24px; /* Further reduce font size */
+  }
+
+  .sectionDescription {
+    font-size: 14px; /* Compact font size */
+    margin-bottom: 20px; /* Adjust spacing */
+  }
+
+  .service-item {
+    padding: 15px; /* Compact padding */
+  }
+
+  .icon {
+    font-size: 30px; /* Further reduce icon size */
+    margin-right: 5px; /* Adjust spacing */
+    padding-left: 5%; /* Further reduce left padding */
+  }
+
+  .serviceTitle {
+    font-size: 16px; /* Further adjust font size */
+    padding-left: 5%; /* Further reduce left padding */
+  }
+
+  .serviceDescription {
+    font-size: 12px; /* Further reduce font size */
+    padding-left: 5%; /* Further reduce left padding */
+  }
+}

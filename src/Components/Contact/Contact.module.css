@@ -1,0 +1,115 @@
+/* Original Styles */
+#contact {
+  padding: 50px 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.sectionTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+
+  text-align: left;
+  padding-left: 20%;
+}
+
+.infoWrap {
+  flex: 1 1 45%; /* Flex item for contact info */
+  display: flex;
+  justify-content: space-between; /* Arrange items horizontally */
+  gap: 30px;
+}
+
+.contactForm {
+  flex: 1 1 45%; /* Flex item for the form */
+  max-width: 500px; /* Set a max width for the form */
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.input,
+.textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Media Queries for Small Devices */
+
+/* Media Queries for Small Devices */
+@media (max-width: 768px) {
+  #contact {
+    flex-direction: column; /* Stack items vertically */
+    padding: 30px 10px; /* Adjust padding for smaller screens */
+    gap: 20px; /* Add spacing between stacked items */
+  }
+
+  .infoWrap {
+    flex: 1 1 100%; /* Make the info section take full width */
+    justify-content: flex-start; /* Align items to the start */
+    gap: 15px; /* Reduce the gap between items */
+  }
+
+  .contactForm {
+    flex: 1 1 100%; /* Make the form section take full width */
+    max-width: 100%; /* Remove max-width restriction */
+    padding: 15px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 576px) {
+  #contact {
+    padding: 20px 5px; /* Further reduce padding for smaller devices */
+  }
+
+  .infoWrap {
+    gap: 10px; /* Minimize gap for extra small screens */
+  }
+
+  .contactForm {
+    padding: 10px; /* Compact padding for the form */
+  }
+
+  .input,
+  .textarea {
+    font-size: 12px; /* Adjust font size for smaller inputs */
+    padding: 8px; /* Compact padding */
+  }
+
+  .button {
+    padding: 8px 15px; /* Reduce button size */
+    font-size: 14px; /* Adjust font size for the button */
+  }
+}

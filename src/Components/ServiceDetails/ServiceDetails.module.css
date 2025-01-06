@@ -1,0 +1,26 @@
+.serviceDetailsSection {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.description {
+  font-size: 18px;
+  color: #6c757d;
+  line-height: 1.8;
+  text-align: center;
+  margin-bottom: 40px;
+}

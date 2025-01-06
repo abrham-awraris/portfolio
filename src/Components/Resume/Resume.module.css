@@ -1,0 +1,117 @@
+.resumeSection {
+  padding-left: 20% !important;
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+.resumeHeader {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+  text-align: left;
+}
+
+.sectionDescription {
+  font-size: 18px;
+  color: #777;
+  line-height: 1.6;
+}
+
+.resumeContent .row {
+  margin: 0;
+}
+
+.resumeCategory {
+  margin-bottom: 30px;
+}
+
+.resumeCategoryTitle {
+  font-size: 26px;
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.resumeItem {
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.resumeItem:hover {
+  transform: translateY(-5px);
+}
+
+.resumeItemTitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resumeItemYear {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.resumeItemDescription {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.resumeItemList {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.resumeItemDetail {
+  font-size: 16px;
+  color: #444;
+}
+
+.resumeItemList li::marker {
+  color: #007bff;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 992px) {
+  .resumeSection {
+    padding-left: 15% !important; /* Adjust padding for medium devices */
+  }
+
+  .resumeHeader {
+    text-align: center; /* Ensure proper alignment */
+  }
+}
+
+@media (max-width: 768px) {
+  .resumeSection {
+    padding-left: 10% !important; /* Further reduce padding for smaller screens */
+  }
+
+  .resumeHeader {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .resumeSection {
+    padding-left: 5% !important; /* Minimal padding for extra small devices */
+  }
+
+  .resumeHeader {
+    text-align: center;
+  }
+}

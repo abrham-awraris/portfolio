@@ -1,0 +1,52 @@
+/* Existing styles */
+.portfolioItem {
+  cursor: pointer;
+}
+
+.portfolioContent {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolioInfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.previewLink {
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Media Query for small devices */
+@media (max-width: 768px) {
+  .portfolioInfo {
+    padding: 15px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Reduce font size for better fit */
+  }
+
+  .previewLink {
+    font-size: 16px; /* Adjust font size for smaller links */
+    margin-right: 5px; /* Reduce spacing between links */
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolioInfo {
+    padding: 10px; /* Further adjust padding for extra small screens */
+    font-size: 12px; /* Smaller font size for compact layouts */
+  }
+
+  .previewLink {
+    font-size: 14px; /* Smaller font size for extra small devices */
+    margin-right: 3px; /* Minimal spacing for compact layouts */
+  }
+}
