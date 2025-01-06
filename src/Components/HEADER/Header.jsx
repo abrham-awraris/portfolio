@@ -40,7 +40,7 @@ const Header = () => {
           {/* Profile Image */}
           <div className={styles.profileImg}>
             <img
-              src="src/assets/img/do-more-profile.jpg"
+              src="assets/img/do-more-profile.jpg"
               alt="Profile"
               className={styles.ovalImg}
             />

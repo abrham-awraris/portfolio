@@ -20,7 +20,7 @@ const Hero = () => {
   return (
     <section id="hero" className={styles.hero}>
       <img
-        src="src/assets/img/tech-bg.jpg"
+        src="assets/img/tech-bg.jpg"
         alt="Background"
         className={styles.backgroundImage}
       />
