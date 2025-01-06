@@ -1,5 +1,5 @@
 .detailsPage {
-  padding: 20px;
+  padding-left: 20%;
   max-width: 1200px;
   margin: 0 auto;
   background: #f9f9f9;
@@ -8,9 +8,9 @@
 .pageTitle {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Aligns the button and title */
-  background-color: black; /* Black background */
-  color: black; /* White text */
+  justify-content: space-between;
+  background-color: black;
+  color: black;
   padding: 15px 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -60,6 +60,7 @@
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  padding-left: 20%;
 }
 
 .infoContainer {
@@ -100,21 +101,18 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
-
-/* For tablets (768px and smaller) */
 @media (max-width: 768px) {
   .pageTitle h2 {
-    font-size: 20px; /* Slightly smaller title for tablets */
+    font-size: 20px;
   }
 
   .backButton {
-    font-size: 12px; /* Adjust button size */
+    font-size: 12px;
     padding: 6px 12px;
   }
 
   .contentContainer {
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
     gap: 15px;
   }
 
@@ -127,30 +125,86 @@
   }
 }
 
-/* For mobile phones (480px and smaller) */
 @media (max-width: 480px) {
   .pageTitle {
-    flex-direction: column; /* Stack title and button vertically */
-    align-items: flex-start; /* Align items to the left */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .pageTitle h2 {
-    font-size: 18px; /* Smaller title for mobile */
+    font-size: 18px;
     margin-bottom: 10px;
   }
 
   .backButton {
-    align-self: flex-start; /* Move button to the left */
+    align-self: flex-start;
     font-size: 12px;
     padding: 5px 10px;
   }
 
   .contentContainer {
-    padding: 15px; /* Reduce padding for smaller screens */
+    padding: 15px;
     gap: 10px;
   }
 
   .descriptionContainer {
-    padding: 15px; /* Adjust padding for descriptions */
+    padding: 15px;
+  }
+}
+
+.detailsPage {
+  padding-left: 20%; /* Default for large screens */
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #f9f9f9;
+}
+
+/* Responsive Design */
+
+/* For tablets (768px and smaller) */
+@media (max-width: 768px) {
+  .detailsPage {
+    padding-left: 10%; /* Adjust padding for medium screens */
+  }
+
+  .contentContainer {
+    flex-direction: column; /* Stack content vertically */
+    gap: 15px;
+  }
+
+  .imageContainer,
+  .infoContainer {
+    width: 100%; /* Make child elements full width */
+  }
+
+  .projectImage {
+    padding-left: 0; /* Remove any extra padding on image */
+  }
+}
+
+/* For mobile phones (480px and smaller) */
+@media (max-width: 480px) {
+  .detailsPage {
+    padding-left: 0; /* Remove padding completely */
+    width: 100%; /* Use full width */
+  }
+
+  .contentContainer {
+    padding: 10px; /* Reduce overall padding */
+    gap: 10px;
+  }
+
+  .imageContainer,
+  .infoContainer {
+    width: 100%; /* Ensure child containers take full width */
+  }
+
+  .projectImage {
+    padding-left: 0; /* Remove padding for images */
+    margin: 0 auto; /* Center the image */
+  }
+
+  .descriptionContainer {
+    padding: 10px; /* Adjust padding for descriptions */
   }
 }

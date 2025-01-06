@@ -105,11 +105,11 @@ const PortfolioDetails = () => {
         </div>
       </div>
 
-      {/* Description Section */}
+      {/* Description Section
       <div className={styles.descriptionContainer}>
         <h3>{project.title}</h3>
         <p>{project.description}</p>
-      </div>
+      </div> */}
     </div>
   );
 };
